@@ -284,3 +284,8 @@ navigator.geolocation.getCurrentPosition(success, error, options);
 // history.go(-2)
 
 //-----------------------------------------------------------------------------
+// SetProperty
+window.addEventListener("mousemove", (e) => {
+  nav.style.setProperty("--x", e.layerX + "px");
+  nav.style.setProperty("--y", e.layery + "px");
+});
